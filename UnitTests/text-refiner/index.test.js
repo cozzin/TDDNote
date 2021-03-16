@@ -20,6 +20,7 @@ test.each`
 test.each`
     source | expected
     ${"hello\t world"} | ${"hello world"}
+    ${"hello \tworld"} | ${"hello world"}
 `(
     'sut transforms "$source" that contains tab character to "$expected"', 
     ({ source, expected }) => {
