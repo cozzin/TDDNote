@@ -3,7 +3,8 @@ function refineText(s) {
         .replace("     ", " ")
         .replace("    ", " ")
         .replace("   ", " ")
-        .replace("  ", " ");
+        .replace("  ", " ")
+        .replace("\t ", " ");
 }
 
 module.exports = refineText;
