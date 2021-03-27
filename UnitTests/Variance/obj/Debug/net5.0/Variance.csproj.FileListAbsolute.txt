@@ -1,0 +1,15 @@
+/Users/user/Documents/Dev/TDD/UnitTests/Variance/bin/Debug/net5.0/Variance.deps.json
+/Users/user/Documents/Dev/TDD/UnitTests/Variance/bin/Debug/net5.0/Variance.runtimeconfig.json
+/Users/user/Documents/Dev/TDD/UnitTests/Variance/bin/Debug/net5.0/Variance.runtimeconfig.dev.json
+/Users/user/Documents/Dev/TDD/UnitTests/Variance/bin/Debug/net5.0/Variance.dll
+/Users/user/Documents/Dev/TDD/UnitTests/Variance/bin/Debug/net5.0/ref/Variance.dll
+/Users/user/Documents/Dev/TDD/UnitTests/Variance/bin/Debug/net5.0/Variance.pdb
+/Users/user/Documents/Dev/TDD/UnitTests/Variance/obj/Debug/net5.0/Variance.csprojAssemblyReference.cache
+/Users/user/Documents/Dev/TDD/UnitTests/Variance/obj/Debug/net5.0/Variance.GeneratedMSBuildEditorConfig.editorconfig
+/Users/user/Documents/Dev/TDD/UnitTests/Variance/obj/Debug/net5.0/Variance.AssemblyInfoInputs.cache
+/Users/user/Documents/Dev/TDD/UnitTests/Variance/obj/Debug/net5.0/Variance.AssemblyInfo.cs
+/Users/user/Documents/Dev/TDD/UnitTests/Variance/obj/Debug/net5.0/Variance.csproj.CoreCompileInputs.cache
+/Users/user/Documents/Dev/TDD/UnitTests/Variance/obj/Debug/net5.0/Variance.dll
+/Users/user/Documents/Dev/TDD/UnitTests/Variance/obj/Debug/net5.0/ref/Variance.dll
+/Users/user/Documents/Dev/TDD/UnitTests/Variance/obj/Debug/net5.0/Variance.pdb
+/Users/user/Documents/Dev/TDD/UnitTests/Variance/obj/Debug/net5.0/Variance.genruntimeconfig.cache
