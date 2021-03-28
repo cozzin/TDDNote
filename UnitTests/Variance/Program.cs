@@ -1,38 +1,37 @@
 ﻿using System;
+using System.Linq;
 
 namespace Variance
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main(string[] args) => Console.WriteLine(args.Length switch
         {
-            if (args.Length == 0) {
-                Console.WriteLine("데이터가 입력되지 않았습니다.");
-                return;
-            } else if (args.Length == 1) {
-                Console.WriteLine("2개 이상의 데이터를 입력하세요.");
-                return;
-            }
-            double[] s = new double[args.Length];
-            for (int i = 0; i < s.Length; i++) {
-                s[i] = double.Parse(args[i]);
-            }
+            0 => "입력된 데이터가 없습니다.",
+            1 => "2개 이상의 데이터를 입력하세요.",
+            _ => GetVarianceOutput(args)
+        });
 
-            double sum = 0.0;
-            for (int i = 0; i < s.Length; i++) {
-                sum += s[i];
-            }
-
-            double mean = sum / s.Length;
-
-            double sumOfSquares = 0.0;
-            for (int i = 0; i < s.Length; i++) {
-                sumOfSquares += (s[i] - mean) * (s[i] - mean);
-            }
-
-            double variance = sumOfSquares / (s.Length - 1);
-
-            Console.WriteLine($"분산: {variance}");
+        private static string GetVarianceOutput(string[] args)
+        {
+            double[] source = ParseArguments(args, args.Length);
+            double mean = CalculateMean(source);
+            double sumOfSquares = CalculateSumOfSquares(source, mean);
+            double variance = sumOfSquares / (args.Length - 1);
+            string output = $"분산: {variance}";
+            return output;
         }
+
+        private static double CalculateSumOfSquares(double[] source, double mean)
+        {
+            return source.Select(x => x - mean)
+                        .Select(x => x * x)
+                        .Sum();
+        }
+
+        private static double CalculateMean(double[] source) => source.Average();
+
+        private static double[] ParseArguments(string[] args, int n)
+            => args.Select(double.Parse).ToArray();
     }
 }
